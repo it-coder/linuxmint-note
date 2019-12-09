@@ -18,6 +18,13 @@ sudo wget http://cdn2.ime.sogou.com/dl/index/1571302197/sogoupinyin_2.3.1.0112_a
 sudo apt-get install ~/${path}/sogoupinyin_2.3.1.0112_amd64.deb
 ```
 
++ 解决文字颜色淡的问题
+```
+sudo apt-get install language-selector-*
+sync
+reboot
+```
+
 ### 微信安装
 
 参考[资料](https://forum.ubuntu.org.cn/viewtopic.php?f=73&p=3217021&sid=6194a64cefc1f4c5ac43dcd8729ca3c8)
