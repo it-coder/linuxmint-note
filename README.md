@@ -8,6 +8,20 @@
 + [资源地址](https://mirrors.tuna.tsinghua.edu.cn/linuxmint-cd/stable/19.2/)
 
 
+### 常用开发命令
+
+``` shell
+apt-cache search package #搜索包
+sudo apt-get -f install #修复安装"-f = --fix-missing"
+sudo apt-get remove package # 删除包
+sudo apt-get remove package --purge #删除包，包括删除配置文件等
+sudo apt-get dist-upgrade #升级系统
+sudo apt-get clean && sudo apt-get autoclean #清理无用的包
+
+#系统apt安装的软件包通常都是下载到如下文件夹：
+#/var/cache/apt
+```
+
 ### 安装输入法
 
 + 需要安装使用fcitx框架
