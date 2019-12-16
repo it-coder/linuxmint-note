@@ -77,6 +77,24 @@ rm -vfr /tmp/deepintemp
 # 然后下载安装微信等window工具
 sudo apt-get install ./deepin.com.wechat_2.6.8.65deepin0_i386.deb    
 ```
+
++ 最新的安装方法(update:2019-12-16)(谢谢[凌风](https://forum.ubuntu.org.cn/viewtopic.php?f=73&p=3217021&sid=6194a64cefc1f4c5ac43dcd8729ca3c8))
+```shell
+#!/bin/bash
+echo "deb [trusted=yes] https://mirrors.aliyun.com/deepin stable main contrib non-free" | sudo tee /etc/apt/sources.list.d/deepin.list
+sudo apt update
+sudo apt install -t bionic deepin.com.wechat deepin.com.qq.im -fy
+sudo rm -f /etc/apt/sources.list.d/deepin.list
+sudo apt update
+```
+
+``` shell
+# 请注意 apt install -t bionic
+# 添加-t 参数，会优先填补ubuntu 系统源，自动安装最新的deepin-wine，如果老旧了卸载方法
+sudo apt purge deepin.com.* -fy
+sudo apt autoremove -fy
+```
+
 + [deepin软件资源地址](http://mirrors.aliyun.com/deepin/pool/non-free/d/)
 + [deepin框架资源下载地址](http://mirrors.aliyun.com/deepin/pool/non-free/d/deepin-wine/)
 
