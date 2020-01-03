@@ -117,3 +117,12 @@ source ~/.bashrc
 # 或 source /etc/profile
 ```
 
+### window字体
+
+window10字体路径`C:\WINDOWS\Fonts`
+ubuntu字体路径`/usr/local/share/fonts/`
+更新命令`sudo fc-cache -fv`
+
+
+
+
