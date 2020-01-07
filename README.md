@@ -123,6 +123,18 @@ window10字体路径`C:\WINDOWS\Fonts`
 ubuntu字体路径`/usr/local/share/fonts/`
 更新命令`sudo fc-cache -fv`
 
+### sublinetext
+
+``` shell
+#下载Sublime Text 3存储库的安全密钥
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+# Sublime Text稳定库添加
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+
+sudo apt update && sudo apt install sublime-text
+
+```
+
 
 
 
